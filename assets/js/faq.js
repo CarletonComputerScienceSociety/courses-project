@@ -15,9 +15,8 @@ $(document).ready(function () {
         .slideDown(300);
     }
   });
- // http://jsfiddle.net/koala_dev/3v2egwfs/7/
-  $(".rotate").click(function(){
-    $(this).toggleClass("down")  ;
-  })
+  // http://jsfiddle.net/koala_dev/3v2egwfs/7/
+  $(".rotate").click(function () {
+    $(this).toggleClass("down");
+  });
 });
-
