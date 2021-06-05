@@ -1,0 +1,35 @@
+.header-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+
+  .header-container {
+    width: $page-width;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-right {
+    max-width: 350px;
+  }
+
+  .header-left {
+    margin-bottom: 1.75rem;
+    .header-title {
+      max-width: 400px;
+      font-size: 4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .header-description {
+      max-width: 500px;
+      font-size: 1.5rem;
+    }
+  }
+}

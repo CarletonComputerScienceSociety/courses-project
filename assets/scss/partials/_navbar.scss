@@ -1,0 +1,40 @@
+.navbar-section {
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+
+  .navbar-container {
+    width: $page-width;
+    // background-color: red;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 3rem;
+    }
+
+    &-text {
+      margin-left: 1rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+      font-family: "Times New Roman", Times, serif;
+    }
+  }
+
+  .navbar-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+  }
+}

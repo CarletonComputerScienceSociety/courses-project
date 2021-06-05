@@ -1,0 +1,13 @@
+.warning-section {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+
+  .warning-container {
+    width: $page-width;
+    // background-color: red;
+    margin: 0.5rem;
+  }
+}
