@@ -1,0 +1,16 @@
+.articles-section {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+
+  .articles-container {
+    width: $page-width;
+    margin: 0.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}

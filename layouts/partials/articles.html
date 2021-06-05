@@ -1,0 +1,7 @@
+<div class="articles-section">
+  <div class="articles-container">
+    {{ range (where .Site.RegularPages "Section" "articles") }}
+      {{- partial "article.html" . -}}
+    {{ end }}
+  </div>
+</div>
