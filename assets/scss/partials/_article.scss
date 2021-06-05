@@ -4,3 +4,52 @@
     font-size: 0.9rem;
   }
 }
+
+.article-page {
+  width: 900px;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: top;
+  img {
+    object-fit: cover;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+.article-page-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.article-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem;
+  margin-bottom: 0rem;
+}
+
+.article-description {
+  color: #8a8887;
+  margin: 2rem;
+  font-size: 1.2rem;
+}
+
+.article-content {
+  margin: 2rem;
+  font-size: 1.3rem;
+  p {
+    color: rgb(92, 92, 92);
+  }
+
+  h1,
+  h2 {
+    margin-top: 3rem;
+  }
+
+  margin-bottom: 5rem;
+}

@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <div class="article-page-container">
+    <div class="article-page">
+      <div class="article-title">{{ .Title }}</div>
+      <div class="article-description">{{ .Description }}</div>
+      <img
+        src="https://ccss.carleton.ca/images/orientation2018-min.jpg"
+        width="500px"
+      />
+      <div class="article-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+{{ end }}
