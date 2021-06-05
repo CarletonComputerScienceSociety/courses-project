@@ -1,3 +1,3 @@
-baseURL = "http://example.org/"
+baseURL = "https://courses.carletoncomputerscience.ca/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Courses - Carleton Computer Science"
