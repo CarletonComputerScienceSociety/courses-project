@@ -1,15 +1,18 @@
 <div class="navbar-section">
   <div class="navbar-container">
-    <a href="{{ .Params.ExternalUrl }}">
+    <a href="{{ .Params.ExternalUrl }}/">
       <div class="navbar-logo">
         <img src="{{ "/images/carleton_logo.png" | absURL }}" />
         <div class="navbar-logo-text">Computer Science</div>
       </div>
     </a>
     <div class="navbar-items">
-      <div>Articles</div>
-      <div>FAQ</div>
-      <div>Contribute</div>
+      <a href="{{ .Params.ExternalUrl }}/#articles"><div>Articles</div></a>
+      <a href="{{ .Params.ExternalUrl }}/#faq"><div>FAQ</div></a>
+      <a
+        href="https://github.com/CarletonComputerScienceSociety/courses-project"
+        ><div>Contribute</div></a
+      >
     </div>
   </div>
 </div>
