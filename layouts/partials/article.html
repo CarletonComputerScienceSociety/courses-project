@@ -1,4 +1,6 @@
-<div class="article">
-  <h2>{{ .Title }}</h2>
-  <p>{{ .Params.description }}</p>
-</div>
+<a href="{{ .Params.url | absURL }}">
+  <div class="article">
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Params.description }}</p>
+  </div>
+</a>
