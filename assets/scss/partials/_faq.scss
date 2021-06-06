@@ -16,6 +16,17 @@
   }
 }
 
+@media screen and (max-width: 855px) {
+  .faq-section {
+    align-items: center;
+    margin: auto;
+
+    .faq-container {
+      width: 600px;
+    }
+  }
+}
+
 .faq {
   margin: 1rem 0;
   border-radius: 0.1rem;
