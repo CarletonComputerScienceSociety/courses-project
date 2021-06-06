@@ -32,10 +32,28 @@
     }
   }
 
+  @media screen and (max-width: 855px) {
+    .navbar-logo {
+      margin-left: 1.4rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .navbar-logo {
+      margin-left: 0.3rem;
+    }
+  }
+
   .navbar-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 30%;
+  }
+
+  @media screen and (max-width: 855px) {
+    .navbar-items {
+      display: none;
+    }
   }
 }

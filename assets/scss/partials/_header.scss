@@ -14,6 +14,12 @@
     align-items: center;
   }
 
+  @media screen and (max-width: 855px) {
+    .header-container {
+      flex-direction: column;
+    }
+  }
+
   .header-right {
     max-width: 350px;
   }

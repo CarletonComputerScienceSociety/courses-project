@@ -13,4 +13,11 @@
     flex-wrap: wrap;
     gap: 2rem;
   }
+
+  @media screen and (max-width: 855px) {
+    .articles-container {
+      width: 600px;
+      justify-content: space-evenly;
+    }
+  }
 }
