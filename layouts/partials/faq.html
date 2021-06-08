@@ -28,10 +28,13 @@
               class="accordion-section-content"
             >
               <p>
-                {{ .answer}}
+                {{ .answer }}
               </p>
-              {{if .source }}
-                <p>Visit <a href="{{.source}}">this page</a> for more information.</p>
+              {{ if .source }}
+                <p>
+                  Visit <a href="{{ .source }}">this page</a> for more
+                  information.
+                </p>
               {{ end }}
             </div>
           </div>
