@@ -27,7 +27,12 @@
               id="accordion-{{ $faqIndex }}"
               class="accordion-section-content"
             >
-              <p>{{ .answer }}</p>
+              <p>
+                {{ .answer}}
+              </p>
+              {{if .source }}
+                <p>Visit <a href="{{.source}}">this page</a> for more information.</p>
+              {{ end }}
             </div>
           </div>
           {{ $faqIndex = add $faqIndex 1 }}

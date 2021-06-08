@@ -37,5 +37,21 @@
       max-width: 500px;
       font-size: 1.5rem;
     }
+
+    @media screen and (max-width: 420px) {
+      .header-title {
+        font-size: 3.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .header-section {
+    margin-top: 2rem;
+  }
+
+  .header-left {
+    margin-bottom: 4rem !important;
   }
 }
