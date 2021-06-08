@@ -1,3 +1,8 @@
 baseURL = "https://courses.carletoncomputerscience.ca/"
 languageCode = "en-us"
 title = "Courses - Carleton Computer Science"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

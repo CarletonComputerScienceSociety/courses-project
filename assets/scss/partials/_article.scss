@@ -1,7 +1,32 @@
 .article {
   width: 185px;
+
   p {
     font-size: 0.9rem;
+  }
+
+  .article-read {
+    margin-top: 1.5rem;
+
+    span {
+      margin-right: 0.2rem;
+      text-decoration: underline;
+    }
+
+    .fa {
+      font-size: 12px;
+    }
+  }
+
+  .article-read:hover {
+    color: gray;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .article {
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -82,6 +107,7 @@
 .article-content {
   margin: 2rem;
   font-size: 1.3rem;
+
   p {
     color: rgb(92, 92, 92);
   }
