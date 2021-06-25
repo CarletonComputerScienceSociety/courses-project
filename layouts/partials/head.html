@@ -3,6 +3,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
   {{- $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "main.scss" . | resources.ToCSS $options | resources.Fingerprint "sha512" }}
+  <title>Courses</title>
+  <meta name="title" content="Registering for Courses?" />
+  <meta
+    name="description"
+    content="Before you graduate, the School of Computer Science has tasked you with completing one final assignment. Pay careful attention to the Summer 2021 convocation video and answer the following multiple choice questions to unlock a bonus congratulatory message from the School of Computer Science."
+  />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:url"
+    content="https://courses.carletoncomputerscience.ca/"
+  />
+  <meta property="og:title" content="Registering for Courses?" />
+  <meta
+    property="og:description"
+    content="This site is a student currated list of resources and registration information to help you build an awesome time table."
+  />
+  <meta property="og:image" content="https://i.imgur.com/1ipAmen.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta
+    property="twitter:url"
+    content="https://courses.carletoncomputerscience.ca/"
+  />
+  <meta property="twitter:title" content="Registering for Courses?" />
+  <meta
+    property="twitter:description"
+    content="This site is a student currated list of resources and registration information to help you build an awesome time table."
+  />
+  <meta property="twitter:image" content="https://i.imgur.com/1ipAmen.png" />
   <link
     rel="stylesheet"
     href="{{ $styles.Permalink }}"
