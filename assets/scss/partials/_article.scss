@@ -21,19 +21,26 @@
   .article-read:hover {
     color: gray;
   }
+
+  /*h2 {
+    height: 3.5rem;
+  }
+  */
+}
+
+.article-link {
+  flex: 1 0 21%;
 }
 
 @media screen and (max-width: 855px) {
   .article {
-    width: 90%;
+    width: 80vw;
     margin: auto;
   }
-}
 
-@media screen and (max-width: 855px) {
-  .article {
-    width: 90%;
-    margin: auto;
+  .article-link {
+    flex: 1 0 100%;
+    width: 100vw;
   }
 }
 
@@ -108,12 +115,20 @@
   margin: 2rem;
   font-size: 1.3rem;
 
-  p {
+  p,
+  ul,
+  li {
     color: rgb(92, 92, 92);
+    font-size: 1.1rem;
+  }
+
+  a {
+    color: red;
   }
 
   h1,
-  h2 {
+  h2,
+  h3 {
     margin-top: 3rem;
   }
 

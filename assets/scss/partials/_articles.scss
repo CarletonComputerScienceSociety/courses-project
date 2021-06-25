@@ -2,7 +2,9 @@
   width: 100%;
   height: fit-content;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
 
   .articles-container {
     width: $page-width;
@@ -12,6 +14,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2rem;
+  }
+
+  .articles-section-title {
+    width: 100vw;
+    // text-decoration: underline;
+    p {
+      width: 30%;
+    }
   }
 
   @media screen and (max-width: 855px) {
