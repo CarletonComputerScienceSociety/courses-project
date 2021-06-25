@@ -1,7 +1,35 @@
 <div class="articles-section" id="articles">
   <div class="articles-container">
-    {{ range (where .Site.RegularPages "Section" "articles") }}
-      {{- partial "article.html" . -}}
+    {{ range $.Site.Data.comp_course_registration }}
+      <a class="article-link" href="{{ .url }}">
+        <div class="article">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
+          <div class="article-read">
+            <span>Read More</span>
+            <div class="fa fa-arrow-right"></div>
+          </div>
+        </div>
+      </a>
     {{ end }}
   </div>
+  <div style="margin-top: 3rem"></div>
+  <div class="articles-container">
+    <div class="articles-section-title">
+      <h1>General Registration</h1>
+    </div>
+    {{ range $.Site.Data.external }}
+      <a class="article-link" href="{{ .url }}">
+        <div class="article">
+          <h2>{{ .title }}</h2>
+          <p>{{ .description }}</p>
+          <div class="article-read">
+            <span>Read More</span>
+            <div class="fa fa-arrow-right"></div>
+          </div>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+  <hr />
 </div>
