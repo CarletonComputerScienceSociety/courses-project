@@ -2,8 +2,18 @@
 <html>
   {{- partial "head.html" . -}}
   {{- partial "navbar.html" . -}}
+
   <body>
     {{- block "main" . }}{{- end }}
+    <noscript>
+      <img
+        src="https://shynet.carletoncomputersciencesociety.ca/ingress/7148ee2a-f355-4a17-80f4-9a7524952d1b/pixel.gif"
+      />
+    </noscript>
+    <script
+      defer
+      src="https://shynet.carletoncomputersciencesociety.ca/ingress/7148ee2a-f355-4a17-80f4-9a7524952d1b/script.js"
+    ></script>
   </body>
   {{- partial "footer.html" . -}}
 </html>
